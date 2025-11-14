@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Резюме: Промпт-инженер</title>
+    <!-- Подключение Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Подключение шрифта Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Применяем шрифт Inter ко всему документу */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Светло-серый фон в стиле Apple */
+            color: #1d1d1f; /* Основной цвет текста Apple (почти черный) */
+        }
+        /* Улучшенная типографика */
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+        .apple-gradient-text {
+            background: linear-gradient(90deg, #34a853, #007aff, #5856d6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .case-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* Более округлые углы */
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            transition: all 0.3s ease;
+        }
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        .skill-pill {
+            display: inline-block;
+            background-color: #e5e5e7; /* Серые "таблетки" */
+            color: #1d1d1f;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Полностью круглые края */
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+        .section-title {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        /* Стилизация заголовков кейсов */
+        .case-card h4 {
+            font-size: 1.25rem; /* 20px */
+            font-weight: 600;
+            color: #5856d6; /* Акцентный цвет */
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ПЛАН 1: Шапка (Header) -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <span class="text-xl font-semibold">Резюме: Промпт-инженер</span>
+                <div class="flex space-x-6 text-sm font-medium text-gray-600">
+                    <a href="#skills" class="hover:text-black transition-colors">Скиллы</a>
+                    <a href="#cases" class="hover:text-black transition-colors">Кейсы</a>
+                    <a href="#experience" class="hover:text-black transition-colors">Опыт</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- ПЛАН 2: Главный экран (Hero) -->
+        <section class="py-24 md:py-40 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-12 text-center">
+                    Промпт-инженер
+                </h1>
+                <div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-8">
+                    <!-- Фото профиля -->
+                    <div class="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden bg-gray-200 flex-shrink-0">
+                        <img src="" alt="Фото профиля" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <!-- Личные данные -->
+                    <div class="text-lg md:text-xl text-gray-700 space-y-2">
+                        <p class="font-semibold text-xl md:text-2xl">Гусейнов Даниэль Парвизович</p>
+                        <p>Возраст: 23</p>
+                        <p>Опыт: 2 года</p>
+                        <p>Уровень: Middle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПЛАН 3: Скиллы (Skills) -->
+        <section id="skills" class="py-24 md:py-32">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="section-title">Скиллы</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <!-- Hard Skills (Правка 2) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6 text-center">Hard Skills</h3>
+                        <div class="flex flex-wrap justify-center">
+                            <span class="skill-pill">Prompt Engineering</span>
+                            <span class="skill-pill">RAG</span>
+                            <span class="skill-pill">Vector Databases</span>
+                            <span class="skill-pill">Fine-tuning</span>
+                            <span class="skill-pill">Chain-of-Thought</span>
+                            <span class="skill-pill">Few-Shot Learning</span>
+                            <span class="skill-pill">API</span>
+                            <span class="skill-pill">OpenWebUI</span>
+                            <span class="skill-pill">n8n</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">JSON</span>
+                            <span class="skill-pill">A/B Тестирование</span>
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">Markdown</span>
+                            <span class="skill-pill">Cursor</span>
+                            <span class="skill-pill">Figma</span>
+                            <span class="skill-pill">Веб-дизайн</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills (Правка 3) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6 text-center">Soft Skills</h3>
+                        <div class="flex flex-wrap justify-center">
+                            <span class="skill-pill">Решение проблем</span>
+                            <span class="skill-pill">Аналитическое мышление</span>
+                            <span class="skill-pill">Коммуникация</span>
+                            <span class="skill-pill">Управление проектами</span>
+                            <span class="skill-pill">Адаптивность</span>
+                            <span class="skill-pill">Публичные выступления</span>
+                            <span class="skill-pill">Кросс-фунциональное взаимодействие</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПЛАН 4: Кейсы (Cases) -->
+        <section id="cases" class="py-24 md:py-32 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="section-title">Кейсы</h2>
+
+                <!-- Кейс 1: Юридические AI-консультанты -->
+                <div class="case-card">
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-4">Юридические AI-консультанты</h3>
+                    <h4>Контекст</h4>
+                    <p class="text-gray-700 leading-relaxed">Компания хотела создать юридического помощника на ИИ, который давал бы рекомендации по рекламным публикациям и предупреждал о возможных рисках. Был готов прототип, который необходимо было улучшить.</p>
+                    
+                    <h4>Задачи</h4>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                        <li>Увеличить точность ответов</li>
+                        <li>Добавить ссылки на правовые акты</li>
+                        <li>Уменьшить количество галлюцинаций</li>
+                    </ul>
+                    
+                    <h4>Действия</h4>
+                    <p class="text-gray-700 leading-relaxed">В первую очередь я написал промпт, который уменьшал количество галлюцинаций. Для повышения точности ответов был собран сценарий в n8n, который использует векторное хранилище с правовым актом, что позволило агенту ссылаться на закон, а не придумывать их.</p>
+                    
+                    <h4>Результат</h4>
+                    <div class="mt-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <ul class="list-none space-y-2">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-2">✔</span> Точность ответов выросла до 90%
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-2">✔</span> Агент стал безошибочно ссылаться на прововые акты
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-2">✔</span> Галлюцинации получилось исключить полностью
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Кейс 2: Автоматизация поиска контента -->
+                <div class="case-card">
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-4">Автоматизация поиска контента</h3>
+                    <h4>Контекст</h4>
+                    <p class="text-gray-700 leading-relaxed">Редактор в компании тратил от 3 часов ежедневно на поиск контента для корпоративных и клиентских каналов.</p>
+                    
+                    <h4>Задача</h4>
+                    <p class="text-gray-700 leading-relaxed">Сокращение времени поиска контента.</p>
+                    
+                    <h4>Действия</h4>
+                    <p class="text-gray-700 leading-relaxed">Был собран сценарий в n8n, который искал новости по RSS-фидам. Далее агент саммаризировал контент по найденным источникам и отправлял его в базу данных. Далее второй агент в режиме чата позволял искать необходимый контент по ключевым словам.</p>
+                    
+                    <h4>Результат</h4>
+                    <div class="mt-4 bg-gray-50 p-6 rounded-xl border border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+                        <div>
+                            <span class="text-sm text-gray-500">До</span>
+                            <p class="text-xl font-semibold">20 инфоповодов / ~3 часа</p>
+                        </div>
+                        <div>
+                            <span class="text-sm text-gray-500">После</span>
+                            <p class="text-xl font-semibold text-green-600">650 инфоповодов / 4-5 минут</p>
+                        </div>
+                        <div class="md:col-span-2">
+                            <p class="text-lg font-medium">Стоимость задачи поиска контента <span class="text-green-600">снизилась на 90%</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кейс 3: Агент технической поддержки -->
+                <div class="case-card">
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-4">Агент технической поддержки</h3>
+                    <h4>Ситуация</h4>
+                    <p class="text-gray-700 leading-relaxed">Отдел тех.поддержки тратил много времени на обработку однообразных заявок, разрешение которых находилось в документации сервиса. Пользователи не изучали документацию самостоятельно и для решения всех базовых проблем отправляли заявки. У техподдержки уходило около суток на решение проблемы.</p>
+                    
+                    <h4>Задача</h4>
+                    <p class="text-gray-700 leading-relaxed">Автоматизировать первый уровень обработки заявок и снизить время отклика для решения проблем пользователей.</p>
+                    
+                    <h4>Действия</h4>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                        <li>Совместно с командой разработки был создан MCP клиент, который позволял получать информацию напрямую из профиля пользователя.</li>
+                        <li>В n8n был собран агент, который позволял получать данные с MCP, обрабатывать их и давать первичную оценку конфигураций из профиля клиента и давать рекомендации по устранению ошибок.</li>
+                        <li>Был подключен второй уровень обработки с RAG, по которому пользователь может задать вопрос по своей проблеме и получить ответ на основе документации сервиса.</li>
+                    </ul>
+                    
+                    <h4>Результат</h4>
+                    <div class="mt-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <p class="text-lg font-medium">Время решения базовых проблем с настройками конфигураций было <span class="text-green-600">снижено с рабочих суток до 1-2 минут</span>.</p>
+                        <p class="text-gray-700 mt-2">Сложные проблемы пользователя, которые требовали вмешательства техподдержки, не терялись в потоке других базовых ошибок.</p>
+                    </div>
+                </div>
+
+                <!-- Кейс 4: Масштабирование процесса генерации AI-музыки -->
+                <div class="case-card">
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-4">Масштабирование процесса генерации AI-музыки</h3>
+                    <h4>Ситуация</h4>
+                    <p class="text-gray-700 leading-relaxed">Компании необходимо было снизить затраты на производство музыки для собственного плеера. Для этого было решено использовать нейросети.</p>
+                    
+                    <h4>Задача</h4>
+                    <p class="text-gray-700 leading-relaxed">Разработать процесс, при котором в краткие сроки будет возможно воссоздать каталог.</p>
+                    
+                    <h4>Действия</h4>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                        <li>Проведен анализ существующего каталога музыки с тесной работой в команде музыкальных редакторов.</li>
+                        <li>Выбор сервиса для генерации музыки и A/B-тестирование генеративной и живой музыки.</li>
+                        <li>Подготовка гайдов и базы промптов для подрядчиков.</li>
+                        <li>Оптимизация процесса генерации текстов и названий треков.</li>
+                        <li>Автоматизация механических процессов и стандартизация материалов для юридического оформления.</li>
+                        <li>Формирование Roadmap по реализации проекта.</li>
+                    </ul>
+                    
+                    <h4>Результат</h4>
+                    <div class="mt-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <p class="text-lg font-medium">Реализован процесс, позволяющий воспроизводить <span class="text-green-600">1000+ треков в месяц</span> без потерь качества.</p>
+                        <p class="text-gray-700 mt-2">Себестоимость трека была <span class="text-green-600">снижена на 900%</span>.</p>
+                    </div>
+                </div>
+
+                <!-- Кейс 5: Мини-боты для автоматизации -->
+                <div class="case-card">
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-4">Создание мини-ботов на базе OpenWebUI</h3>
+                    <h4>Ситуация</h4>
+                    <p class="text-gray-700 leading-relaxed">Необходимо было помочь сотрудникам компании в автоматизации рутинных задач по запросу.</p>
+                    
+                    <h4>Задачи</h4>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                        <li>Автоматизация генерации промптов для изображений.</li>
+                        <li>Серия ботов для работы с таблицами (обработка больших объемов данных).</li>
+                        <li>Ускорение написания контента для корпоративного развлекательного контента.</li>
+                    </ul>
+                    
+                    <h4>Результат</h4>
+                    <div class="mt-4 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <p class="text-lg font-medium">В среднем получилось <span class="text-green-600">снизить трудозатраты на рутинные задачи на 60%</span>.</p>
+                    </div>
+                </div>
+
+                <!-- Кейс 6: Корпоративные гайды -->
+                <div class="case-card">
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-4">Разработка корпоративных гайдов по нейросетям</h3>
+                    <h4>Задача</h4>
+                    <p class="text-gray-700 leading-relaxed">Повысить лояльность к нейросетям и избавить от страха их использования внутри компании.</p>
+                    
+                    <h4>Действия</h4>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                        <li>Проведено количественное исследование для поиска целевых задач.</li>
+                        <li>Выделены модели, позволяющие решать целевые задачи.</li>
+                        <li>Разработан cookbook с кейсами/разборами целевых задач с промптами.</li>
+                        <li>Разработан общий гайд по тому, как правильно промптить модели.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ПЛАН 5: Опыт работы (Experience) -->
+        <section id="experience" class="py-24 md:py-32">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="section-title">Опыт работы</h2>
+                <!-- Контейнер для карточек опыта -->
+                <div class="inline-flex flex-col gap-8">
+                    <!-- Правка 6 -->
+                    <div class="bg-white p-10 rounded-2xl shadow-sm text-left md:text-center">
+                        <h3 class="text-2xl font-semibold">Cubic Media</h3>
+                        <p class="text-lg text-gray-600 mt-1">13.01.2025 – по настоящее время</p>
+                    </div>
+                    <!-- Правка 5 -->
+                    <div class="bg-white p-10 rounded-2xl shadow-sm text-left md:text-center">
+                        <h3 class="text-2xl font-semibold">FutureToday</h3>
+                        <p class="text-lg text-gray-600 mt-1">20.07.2023 – 13.01.2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПЛАН 6: Footer -->
+    <footer class="bg-gray-100 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12 text-center">
+            <p class="text-gray-500 text-sm">
+                <b>Телефон:</b> +7 901 704-75-51 <br>
+                <b>Почта:</b> danielsmd427@gmail.com <br>
+                <b>Телеграм:</b> @bobbydantel
+            </D>
+        </div>
+    </footer>
+
+</body>
+</html>
